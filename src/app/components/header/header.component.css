@@ -5,7 +5,7 @@
 }
 
 header{
-  background-color: rgb(245,245,245);
+  background-color: #002C3E;
   width: 100%;
 }
 
@@ -38,7 +38,7 @@ header a{
   color: black;
   background-color: rgb(252, 252, 252);
   margin: 5px;
-  width:120px;
+  width: 120px;
 
 }
 

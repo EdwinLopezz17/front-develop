@@ -1,0 +1,23 @@
+.mat-stepper-horizontal {
+  margin-top: 10px;
+}
+
+.mat-mdc-form-field {
+  margin-top: 16px;
+}
+
+
+
+body a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  background-color: rgb(252, 252, 252);
+  margin: 5px;
+  width: 120px;
+
+}
+@media (min-width: 720px) {
+
+}

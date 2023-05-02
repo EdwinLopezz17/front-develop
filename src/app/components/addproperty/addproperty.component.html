@@ -1,0 +1,141 @@
+<h1>Add Property</h1>
+  <body>
+  <div class = "container">
+
+    <mat-stepper #stepper>
+      <mat-step [stepControl]="firstFormGroup" errorMessage="Incomplete fields">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Step</ng-template>
+
+          <p><u>Owner's data</u></p>
+
+          <a>
+          <mat-form-field appearance="outline">
+            <mat-label>Property Title</mat-label>
+            <input matInput placeholder="e.g. Large apartment" formControlName="firstCtrl" required>
+          </mat-form-field>
+          </a>
+
+          <p>
+            <a>
+              <mat-form-field appearance="outline">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="e.g. Rosa" formControlName="firstCtrl" required>
+              </mat-form-field>
+            </a>
+
+            <a>
+              <mat-form-field appearance="outline">
+                <mat-label>Last name</mat-label>
+                <input matInput placeholder="e.g. Uribe" formControlName="firstCtrl" required>
+              </mat-form-field>
+            </a>
+          </p>
+
+          <p>
+            <a>
+              <mat-form-field appearance="outline">
+                <mat-label>Phone</mat-label>
+                <input matInput placeholder="e.g. 465 465 484" formControlName="firstCtrl" required>
+              </mat-form-field>
+            </a>
+
+            <a>
+              <mat-form-field appearance="outline">
+                <mat-label>Cell phone</mat-label>
+                <input matInput placeholder="e.g. 930703750" formControlName="firstCtrl" required>
+              </mat-form-field>
+            </a>
+
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+
+      <mat-step [stepControl]="secondFormGroup" errorMessage="Incomplete fields">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Step</ng-template>
+          <p><u>Property Location</u></p>
+          <p><a>
+          <mat-form-field appearance="outline">
+            <mat-label>Address</mat-label>
+            <input matInput placeholder="e.g. Jr. Alejandro Tirado 229" formControlName="secondCtrl" required>
+          </mat-form-field>
+          </a></p>
+
+          <p>
+            <a>
+              <mat-form-field appearance="outline">
+                <mat-label>District</mat-label>
+                <input matInput placeholder="e.g. La Molina" formControlName="secondCtrl" required>
+              </mat-form-field>
+            </a>
+          </p>
+
+
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+
+      <mat-step>
+        <ng-template matStepLabel>Step</ng-template>
+        <p><u>Characteristics of the property</u></p>
+        <p><a>
+          <mat-form-field appearance="outline">
+            <mat-label>Property category</mat-label>
+            <mat-select>
+              <mat-option value="one">Rooms</mat-option>
+              <mat-option value="two">Households</mat-option>
+              <mat-option value="one">Business premises</mat-option>
+              <mat-option value="two">Departments</mat-option>
+            </mat-select>
+          </mat-form-field>
+          </a></p>
+
+        <p>
+          <a>
+            <mat-form-field appearance="outline">
+              <mat-label>Number of environments</mat-label>
+              <input matInput placeholder="e.g. 3">
+            </mat-form-field>
+          </a>
+
+          <a>
+            <mat-form-field appearance="fill">
+              <mat-label>Description</mat-label>
+              <textarea matInput></textarea>
+            </mat-form-field>
+          </a>
+        </p>
+
+        <p><u>Hours available for visits</u></p>
+        <p><a>
+          <mat-form-field appearance="outline">
+            <mat-label>First Schedule</mat-label>
+            <input matInput placeholder="e.g. Monday 3:00 p.m.">
+          </mat-form-field>
+        </a>
+          <a>
+            <mat-form-field appearance="outline">
+              <mat-label>Second Schedule</mat-label>
+              <input matInput placeholder="e.g. Saturday 5:00 p.m.">
+            </mat-form-field>
+          </a>
+        </p>
+
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+      </mat-step>
+
+
+    </mat-stepper>
+
+
+  </div>
+</body>
