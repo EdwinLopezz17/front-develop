@@ -17,6 +17,8 @@ import {MatCardModule} from "@angular/material/card";
 import {MatSelectModule} from "@angular/material/select";
 import { UserLessorProfileComponent } from './components/user-lessor-profile/user-lessor-profile.component';
 import {MatChipsModule} from "@angular/material/chips";
+import { AdvertisementLessorComponent } from './components/advertisement-lessor/advertisement-lessor.component';
+import { SecondHeaderLessorComponent } from './components/second-header-lessor/second-header-lessor.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import {MatChipsModule} from "@angular/material/chips";
     FooterComponent,
     HeaderLessorComponent,
     AddAdvertisementComponent,
-    UserLessorProfileComponent
+    UserLessorProfileComponent,
+    AdvertisementLessorComponent,
+    SecondHeaderLessorComponent
   ],
     imports: [
         BrowserModule,
