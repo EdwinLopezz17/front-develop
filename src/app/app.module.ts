@@ -15,6 +15,8 @@ import {MatInputModule} from "@angular/material/input";
 import {MatAutocompleteModule} from "@angular/material/autocomplete";
 import {MatCardModule} from "@angular/material/card";
 import {MatSelectModule} from "@angular/material/select";
+import { UserLessorProfileComponent } from './components/user-lessor-profile/user-lessor-profile.component';
+import {MatChipsModule} from "@angular/material/chips";
 
 @NgModule({
   declarations: [
@@ -22,20 +24,22 @@ import {MatSelectModule} from "@angular/material/select";
     HeaderComponent,
     FooterComponent,
     HeaderLessorComponent,
-    AddAdvertisementComponent
+    AddAdvertisementComponent,
+    UserLessorProfileComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatRadioModule,
-    MatIconModule,
-    MatButtonToggleModule,
-    MatButtonModule,
-    MatInputModule,
-    MatAutocompleteModule,
-    MatCardModule,
-    MatSelectModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatRadioModule,
+        MatIconModule,
+        MatButtonToggleModule,
+        MatButtonModule,
+        MatInputModule,
+        MatAutocompleteModule,
+        MatCardModule,
+        MatSelectModule,
+        MatChipsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
