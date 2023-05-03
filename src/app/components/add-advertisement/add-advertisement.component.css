@@ -1,0 +1,19 @@
+.mini-menu{
+  background-color: #EBF2FA;
+  padding:25px;
+  display-model: flex;
+}
+.buttons{
+
+}
+
+.input-bar{
+  max-width: 100%;
+  background-size: 100px;
+}
+
+body h2{
+  padding-left: 50px;
+  padding-top: 30px;
+}
+

@@ -1,0 +1,70 @@
+<body>
+  <app-header-lessor/>
+  <div class="mini-menu">
+    <button class="buttons" color="primary" mat-flat-button>
+      <span>My teanants</span>
+      <mat-icon iconPositionEnd>expand_more</mat-icon>
+    </button>
+    <button class="buttons" color="primary" mat-flat-button >
+      <span>My properties</span>
+      <mat-icon iconPositionEnd>expand_more</mat-icon>
+    </button>
+    <button class="buttons" color="primary" mat-flat-button >
+      <span>Advertisement</span>
+      <mat-icon iconPositionEnd>expand_more</mat-icon>
+    </button>
+    <div>
+      <form class="mat-form-field">
+        <div class="input-group no border">
+          <input style="width: 30%; height: 30px;" type="text" class="mat-form-field-autofill-control" placeholder="Search">
+          <button style="height: 30px;" mat-raised-button type="submit" class="btn btn-white btn-round btn-just-icon">
+            <mat-icon>search</mat-icon>
+            <div class="mat-form-field-ripple"></div>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div>
+    <h2>Create</h2>
+    <div style="padding-left: 15%; padding-right: 15%;">
+      <mat-card style="background-color: #EBF2FA; padding-bottom: 150px;">
+        <div style="padding-left: 20px;padding-top:20px;">
+          <button class="icons mat-icon-button" mat-fab color="basic" aria-label="Profile">
+            <mat-icon>person</mat-icon>
+          </button>
+        </div>
+        <div style="padding-left:100px; padding-right:50px; ">
+          <mat-card style="width: 800px">
+            <mat-card-content style="padding-left: 75px;padding-top:25px;">
+              <mat-card-title>Create Add</mat-card-title>
+              <mat-icon style="margin: 0%;">maximize</mat-icon>
+              <div>
+                <form class="mat-form-field">
+                  <div class="input-group no border">
+                    <input style="width: 650px; height: 180px;" type="text" class="mat-form-field-autofill-control" placeholder="Message">
+                  </div>
+                </form>
+              </div>
+              <div>
+                <mat-form-field style="padding-left: 380px">
+                  <mat-label>Select Property</mat-label>
+                  <mat-select>
+                    <!-- ACA SE DEBE COLOCAR LAS OPCIONES !-->
+                  </mat-select>
+                </mat-form-field>
+              </div>
+            </mat-card-content>
+          </mat-card>
+        </div>
+        <div style="padding-left: 750px; padding-top:20px;">
+          <button class="buttons" color="primary" mat-flat-button style="width: 200px;">
+            <span>Save</span>
+          </button>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+
+
+</body>
