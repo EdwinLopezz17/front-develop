@@ -61,18 +61,28 @@ header a{
     display: flex;
     flex-direction: row;
   }
-}
-
-header nav button{
-  border: 15px;
+  header nav button{
+    border: 15px;
+  }
 }
 
 .icons{
   background-color: white;
 }
 
+.icons-size{
+  font-size: 45px;
+  width: 45px;
+  height: 45px;
+}
+
+.nav-icons{
+  padding-right: 35px;
+}
+
 .publish{
   font-size: 25px;
-  margin-left: 8px;
   min-width: 120px;
+  border-radius: 25px;
 }
+
