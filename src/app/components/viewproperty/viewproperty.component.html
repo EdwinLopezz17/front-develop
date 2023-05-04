@@ -1,0 +1,108 @@
+<body>
+<div class="mini-menu">
+  <mat-toolbar>
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <mat-tab>
+        <mat-form-field color="primary">
+          <mat-label>My Tenants</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="tenant">
+            <mat-option *ngFor="let tenant of tenants" [value]="tenant.value">
+              {{tenant.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-tab>
+    </mat-tab-group>
+
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <mat-tab>
+        <mat-form-field color="primary">
+          <mat-label>My properties</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="add">
+            <mat-option *ngFor="let add of adds" [value]="add.value">
+              {{add.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-tab>
+    </mat-tab-group>
+
+    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+      <mat-tab>
+        <mat-form-field color="primary">
+          <mat-label>Advertisement</mat-label>
+          <mat-select [(ngModel)]="selectedValue" name="category">
+            <mat-option *ngFor="let category of categories" [value]="category.value">
+              {{category.viewValue}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-toolbar>
+</div>
+
+<div class="cards">
+  <div class="primero">
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Home</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image src="https://i.ibb.co/599qhjk/propiedad1.png" alt="propiedad1">
+  <mat-card-content>
+    <ul style="list-style-type: disc;">
+      <li>Location: Jr. Los Arenales</li>
+      <li>District: La Molina</li>
+      <li>Type of property: apartment</li>
+      <li>Number of rooms: 4</li>
+      <li>Visiting hours: Monday 3:00 pm</li>
+    </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button> <mat-icon>edit</mat-icon> </button>
+  </mat-card-actions>
+</mat-card>
+  </div>
+  <div class="segundo">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Duplex Apartment</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://i.ibb.co/nzpN7cf/propiedad2.png" alt="propiedad1">
+      <mat-card-content>
+        <ul style="list-style-type: disc;">
+          <li>Location: Jr. Los Arenales</li>
+          <li>District: La Molina</li>
+          <li>Type of property: apartment</li>
+          <li>Number of rooms: 4</li>
+          <li>Visiting hours: Monday 3:00 pm</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions>
+        <button> <mat-icon>edit</mat-icon> </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  <div class="tercero">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Room</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="https://i.ibb.co/mSnXwfC/propiedad3.png" alt="propiedad1">
+      <mat-card-content>
+        <ul style="list-style-type: disc;">
+          <li>Location: Jr. Los Arenales</li>
+          <li>District: La Molina</li>
+          <li>Type of property: apartment</li>
+          <li>Number of rooms: 4</li>
+          <li>Visiting hours: Monday 3:00 pm</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-actions>
+        <button> <mat-icon>edit</mat-icon> </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+</body>

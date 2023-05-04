@@ -1,0 +1,59 @@
+.mini-menu{
+  background-color: #EBF2FA;
+  padding:25px;
+  display-model: flex;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+.example-icon {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.mat-toolbar {
+  margin: 0;
+  padding: 25px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: #EBF2FA;
+}
+
+.example-card {
+  margin-top: 30px;
+  max-width: 300px;
+  padding-top: 0;
+  justify-items: center;
+
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.primero, .segundo, .tercero {
+  width: 35%;
+  justify-content: center;
+  justify-items: center;
+}
+
+mat-icon{
+  padding-right: 10px;
+}
+.mat-card-actions{
+  padding-right: 50px;
+}
+img{
+  margin-top:0;
+  width: 250px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+
+}
+
+.example-header-image {
+  background-size: cover;
+
+
+}

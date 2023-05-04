@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
-import {FormBuilder, Validators} from '@angular/forms';
-import {STEPPER_GLOBAL_OPTIONS} from '@angular/cdk/stepper';
-
+import {FormControl} from '@angular/forms';
 interface Tenant {
   value: string;
   viewValue: string;
@@ -17,27 +15,14 @@ interface Category{
   viewValue: string;
 }
 
-
 @Component({
-  selector: 'app-addproperty',
-  templateUrl: './addproperty.component.html',
-  styleUrls: ['./addproperty.component.css'],
-  providers: [
-    {
-      provide: STEPPER_GLOBAL_OPTIONS,
-      useValue: {showError: true},
-    },
-  ],
+  selector: 'app-viewproperty',
+  templateUrl: './viewproperty.component.html',
+  styleUrls: ['./viewproperty.component.css']
 })
-export class AddpropertyComponent {
-  firstFormGroup = this._formBuilder.group({
-    firstCtrl: ['', Validators.required],
-  });
-  secondFormGroup = this._formBuilder.group({
-    secondCtrl: ['', Validators.required],
-  });
+export class ViewpropertyComponent {
 
-  constructor(private _formBuilder: FormBuilder) {}
+  disableSelect = new FormControl(false);
 
   tenants: Tenant[] = [
     {value: 'add tenant', viewValue: 'Add tenant'},

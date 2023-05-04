@@ -1,5 +1,48 @@
-<h1>Add Property</h1>
-  <body>
+ <body>
+  <div class="mini-menu">
+    <mat-toolbar>
+      <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+        <mat-tab>
+          <mat-form-field color="primary">
+            <mat-label>My Tenants</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="tenant">
+              <mat-option *ngFor="let tenant of tenants" [value]="tenant.value">
+                {{tenant.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-tab>
+      </mat-tab-group>
+
+      <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+        <mat-tab>
+          <mat-form-field color="primary">
+            <mat-label>My properties</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="add">
+              <mat-option *ngFor="let add of adds" [value]="add.value">
+                {{add.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-tab>
+      </mat-tab-group>
+
+      <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+        <mat-tab>
+          <mat-form-field color="primary">
+            <mat-label>Advertisement</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="category">
+              <mat-option *ngFor="let category of categories" [value]="category.value">
+                {{category.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-toolbar>
+  </div>
+  <h2>Add Property</h2>
+
   <div class = "container">
 
     <mat-stepper #stepper>
@@ -8,14 +51,12 @@
           <ng-template matStepLabel>Step</ng-template>
 
           <p><u>Owner's data</u></p>
-
           <a>
           <mat-form-field appearance="outline">
             <mat-label>Property Title</mat-label>
             <input matInput placeholder="e.g. Large apartment" formControlName="firstCtrl" required>
           </mat-form-field>
           </a>
-
           <p>
             <a>
               <mat-form-field appearance="outline">
@@ -23,7 +64,6 @@
                 <input matInput placeholder="e.g. Rosa" formControlName="firstCtrl" required>
               </mat-form-field>
             </a>
-
             <a>
               <mat-form-field appearance="outline">
                 <mat-label>Last name</mat-label>
