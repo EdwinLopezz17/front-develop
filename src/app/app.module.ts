@@ -22,7 +22,6 @@ const routes: Routes=[
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
     PrincipalComponent,
     PerfilComponent,
     SeeProfileComponent,
