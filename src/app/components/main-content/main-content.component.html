@@ -1,0 +1,21 @@
+<mat-card *ngFor="let anuncio of anuncios" class="anuncios" style="max-width: 1200px" >
+  <mat-card-content>
+    <div class="anuncio" >
+      <img src="assets/images/{{anuncio.imagen}}" alt="{{anuncio.descripcion}}">
+      <div class="texto">
+        <button class="send">Send message</button>
+        <h3>{{anuncio.titulo}}</h3>
+        <p>{{anuncio.descripcion}}</p>
+      </div>
+    </div>
+    <div class="calificacion">
+      <div class="start">
+        <img src="assets/images/{{anuncio.perfil}}" alt="{{anuncio.descripcion}} " >
+        <mat-icon class="iconstar" *ngFor="let i of [1, 2, 3, 4, 5]" >
+          {{i<=anuncio.calificacion ? 'star':'star_border'}}
+        </mat-icon>
+      </div>
+
+    </div>
+  </mat-card-content>
+</mat-card>
