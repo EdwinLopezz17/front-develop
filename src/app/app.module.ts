@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PrincipalComponent } from './components/principal/principal.component';
+
 import {  PerfilComponent} from "./components/perfil/perfil.component";
 import { SeeProfileComponent } from './components/see-profile/see-profile.component';
 import { HeaderProfileComponent } from './components/header-profile/header-profile.component';
@@ -22,11 +23,11 @@ const routes: Routes=[
   declarations: [
     AppComponent,
     HeaderComponent,
-    PrincipalComponent,
     PerfilComponent,
     SeeProfileComponent,
-    HeaderProfileComponent
-
+    HeaderProfileComponent,
+    FooterComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,

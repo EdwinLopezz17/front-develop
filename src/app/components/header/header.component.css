@@ -1,8 +1,6 @@
 
-.container{
-  max-width: 1300px;
-  margin: auto;
-}
+
+
 
 header{
   background-color: rgb(245,245,245);
@@ -48,6 +46,14 @@ header a:hover{
 
 
 @media (min-width: 720px){
+
+  .container{
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+
   header{
     display: flex;
   }
@@ -60,6 +66,7 @@ header a:hover{
   }
   header .logo{
     justify-content:left;
+
   }
   header .container nav{
     display: flex;
