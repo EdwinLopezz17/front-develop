@@ -1,0 +1,268 @@
+
+body{
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.color-acento{
+  color: #064789;
+}
+
+button{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0px 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: #EBF2FA;
+  background-color: #1772cd;
+}
+button:hover{
+  background-color: rgb(52, 148, 226);
+}
+
+.container{
+  max-width: 1300px;
+  margin: auto;
+}
+
+body{
+  font-family: 'RerossRectagular', 'seans-serif';
+  margin: 0;
+}
+h1{font-size: 2.5em;}
+
+h2{font-size: 2.1em;}
+h2 span{
+  font-size: 0.9em;
+}
+h3{font-size:1.7em;}
+p{ font-size: 1.1em;}
+
+
+.filter{
+  margin: 1px;
+  background-color: #DBDBDB;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  text-align: center;
+  flex-direction: row;
+  height: 120px;
+  flex-wrap: wrap;
+}
+
+.filter button{
+  min-width: 130px;
+  width:max-content;
+  font-size: 0.9em;
+  margin: 10px;
+}
+.filter .container{
+  width: 100vw;
+  max-width: 900px;
+}
+
+#home{
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 30vh;
+  color:#F7F8F3;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)),
+  url('src/assets/images/home.jpg');
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#somos .container{
+  text-align: center;
+  padding: 40px 12px;
+}
+
+#category{
+  background-color: #EBF2FA;
+  color: #EBF2FA;
+  text-align: center;
+}
+#category .container{
+  padding: 30px 10px;
+}
+#category h2{
+  color: rgb(52, 148, 226);
+}
+#category p{
+  display: none;
+}
+#category .carta{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+  )
+  ,url("src/assets/images/apartment2.jpg");
+}
+.carta:nth-child(2){
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+  )
+  ,url("src/assets/images/vivienda.jpg");
+}
+.carta:nth-child(3){
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+  )
+  ,url("src/assets/images/local.jpg");
+}
+.carta:nth-child(4){
+  background-image: linear-gradient(
+    0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+  )
+  ,url("src/assets/images/cuartos.jpg");
+}
+
+footer{
+  background-color: #002C3E;
+}
+footer p{
+  margin: 0;
+  color: white;
+  padding-top: 10px;
+  font-size: 1em;
+}
+footer .container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+footer .container img{
+  height: 43px;
+  width: 100px;
+  margin: 15px;
+}
+
+
+footer .icons{
+  color:#DBDBDB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px 0 3px 0;
+  padding: 0;
+}
+
+footer .icons ion-icon{
+  margin: 15px
+}
+
+
+
+@media (min-width: 720px){
+
+  h1{font-size: 3.5em;}
+  h2{font-size: 2.7em;}
+  h3{font-size: 2em;}
+  p{ font-size: 1.25em;}
+
+
+  header{
+    display: flex;
+  }
+
+  header .logo img{
+    display:flex;
+    height: 43px;
+    width: 100px;
+    margin: 0 20px 0 20px;
+  }
+
+  header .logo{
+    justify-content:left;
+  }
+  header .container nav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .filter .container{
+    display: flex;
+    justify-content:space-around;
+  }
+
+  #home h1{
+    font-size: 5em;
+  }
+
+  #home{
+    height: 50vh;
+  }
+  #somos .container{
+    display: flex;
+    justify-content: center;
+  }
+  #somos .text{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos h2{
+    text-align: center;
+  }
+  #somos .img-container{
+    background-image: url("src/assets/images/logo.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    height: 300px;
+    width: 300px;
+  }
+
+  #category .categorias .carta{
+    width: 40%;
+  }
+  #category .categorias{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #category .categorias{
+    display:flex;
+    justify-content: center;
+  }
+  #category p{
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #category h3{
+    margin-top: 0;
+    color:#EBF2FA;
+    font-weight: bold;
+    justify-content: center;
+  }
+  #category .carta{
+    padding: 15px;
+  }
+}
+
