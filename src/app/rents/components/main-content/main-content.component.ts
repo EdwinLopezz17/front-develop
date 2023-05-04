@@ -1,4 +1,4 @@
-import { Component,Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-main-content',
@@ -6,5 +6,5 @@ import { Component,Input } from '@angular/core';
   styleUrls: ['./main-content.component.css']
 })
 export class MainContentComponent {
-  @Input() anuncios:Array<any>= [];
+@Input() anuncios:Array<any>= [];
 }
